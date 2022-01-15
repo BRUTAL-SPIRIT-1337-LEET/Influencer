@@ -1,0 +1,235 @@
+/* ........................................google font............................ */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* .....................................\header ..........................................*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav h2{
+    font-size: 2.3em;
+}
+nav a{
+    padding: 0 9px;
+    text-decoration: none;
+    color: black;
+    margin: 4px;
+    font-size: 1.1em;
+}
+nav a img{
+   margin-top: 5px;
+}
+/* ....................................sec-one .................................*/
+
+h1{
+    font-size: 3em;
+}
+.one .sec-one-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;   
+}
+#order-1{
+    order: 2;
+}
+#order-2{
+    order: 1;
+}
+.influencer-pic{
+    /* background-image: url(images/Circle\ design.svg); */
+    background-repeat: no-repeat;
+    padding: 0 20px;
+ }
+.sec-one-detail{
+    width: 500px;
+    height: 450px;
+    padding: 0 0px;
+}
+p a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    background-color: crimson;
+   border-radius: 5px;
+      padding: 0 15px;
+    width: 170px; 
+}
+.book-now-button{
+    margin-left: 10px;    
+}
+.arrow-icon{
+    color: white;
+}
+.influencer-pic:hover {
+    cursor: pointer;
+    transform: scale(1.5) rotate(10deg);
+    transition: transform 2s ease-in-out;
+}
+/* .....................................\section-two ..................................*/
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      margin-top: 20px;
+}
+
+.logos{
+    display: flex;
+    width: 850px;
+   justify-content: space-between;
+  
+}
+/* .....................................section-three ......................................*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-row-gap: 40px;
+   margin-left: 120px;
+}
+.main-container-of-items{
+    justify-content: center;
+    align-items: center;
+}
+.third-sec-title{
+    text-align: center;
+}
+.item{
+    width: 300px; 
+   text-align: center;
+   line-height: 8px;
+}
+.fa-star.fielld{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+.see-more{
+    position: relative;
+   left: 1025px;
+}
+.see-more-icon{
+    margin-left: 15px;
+}
+/* ......................................section 4.................................... */
+.four{
+    margin-top: 30px;
+}
+.extra{
+    display: flex;
+    
+}
+.extra .box-1 img{
+    width: 80%;
+}
+.extra .box-2{
+    width: 50%;
+}
+/*...................................footer ............................................*/
+footer{
+    color: white;
+    background-color: rgb(14, 14, 32);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+
+/* media quarys */
+
+/* mobile devices */
+@media only screen and (max-width:688px){
+    nav span{
+        display: flex;
+        flex-direction: row;
+    }
+    .sec-one-container{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .sec-one-container .influencer-pic, .sec-one-detail {
+width: 50%;
+    }
+    .sec-one-container img{
+        width: 50%;
+        margin-top: 200px;
+       
+    }
+    .two .logos{
+      
+        justify-content: center;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-left: 130px;
+      
+    }
+    .third .main-container-of-items .third-sec-title{
+        width: 90%;
+        
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .button.see-more{
+position: relative;
+left: 50px;
+    }
+    .extra{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 50px;
+    }
+    footer{
+        width: 70%;
+    }
+
+}
+/* tablet */
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+   nav{
+       display: flex;
+       flex-wrap: wrap;       
+    }
+    .sec-one-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logos{
+        display: flex;
+      flex-direction: column;
+      width: 2em;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       margin-left: 40px;
+    }
+    .button.see-more{
+        position: relative;
+        left: 250px;
+            }
+            .extra{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box-2, p{
+                text-align: center;
+                margin-left: 100px;
+            }
+
+    
+}
